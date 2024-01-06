@@ -1,0 +1,13 @@
+{
+    "language": "en,pt-br",
+    "ignoreRegExpList": [
+        // cSpell: disable
+        "@massivelivefun\\b"
+        // cSpell: enable
+    ],
+    "words": [
+        "exercism",
+        "freenode",
+        "Ziglings"
+    ]
+}
