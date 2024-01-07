@@ -26,20 +26,13 @@ declare(strict_types=1);
 
 function squareOfSum(int $max): int
 {
-    $sum = 0;
-    for ($i = 1; $i <= $max; $i++) {
-        $sum += $i;
-    }
+    $sum = ($max * ($max + 1)) / 2;
     return $sum * $sum;
 }
 
 function sumOfSquares(int $max): int
 {
-    $sum = 0;
-    for ($i = 1; $i <= $max; $i++) {
-        $sum += $i * $i;
-    }
-    return $sum;
+    return ($max * ($max + 1) * (2 * $max + 1)) / 6;
 }
 
 function difference(int $max): int
