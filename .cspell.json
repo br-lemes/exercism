@@ -2,12 +2,18 @@
     "language": "en,pt-br",
     "ignoreRegExpList": [
         // cSpell: disable
-        "@massivelivefun\\b"
+        "@arueckauer\\b",
+        "@duffn\\b",
+        "@joseph\\-walker\\b",
+        "@kytrinyx\\b",
+        "@massivelivefun\\b",
+        "@petemcfarlane\\b"
         // cSpell: enable
     ],
     "words": [
         "exercism",
         "freenode",
+        "phpunit",
         "usize",
         "youtube",
         "Ziglings"
