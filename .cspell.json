@@ -2,17 +2,31 @@
     "language": "en,pt-br",
     "ignoreRegExpList": [
         // cSpell: disable
+        "@ErikSchierboom\\b",
         "@Scientifica96\\b",
         "@arueckauer\\b",
+        "@ashleygwilliams\\b",
+        "@coriolinus\\b",
+        "@cwhakes\\b",
         "@dkinzer\\b",
         "@duffn\\b",
         "@joseph\\-walker\\b",
+        "@juleskers\\b",
+        "@kotp\\b",
         "@kunicmarko20\\b",
         "@kytrinyx\\b",
         "@lafent\\b",
+        "@lutostag\\b",
         "@massivelivefun\\b",
+        "@mkantor\\b",
+        "@navossoc\\b",
         "@neenjaw\\b",
-        "@petemcfarlane\\b"
+        "@nfiles\\b",
+        "@petemcfarlane\\b",
+        "@petertseng\\b",
+        "@rofrol\\b",
+        "@stringparser\\b",
+        "@xakon\\b"
         // cSpell: enable
     ],
     "words": [
