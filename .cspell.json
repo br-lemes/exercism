@@ -3,9 +3,12 @@
     "ignoreRegExpList": [
         // cSpell: disable
         "@arueckauer\\b",
+        "@dkinzer\\b",
         "@duffn\\b",
         "@joseph\\-walker\\b",
+        "@kunicmarko20\\b",
         "@kytrinyx\\b",
+        "@lafent\\b",
         "@massivelivefun\\b",
         "@petemcfarlane\\b"
         // cSpell: enable
