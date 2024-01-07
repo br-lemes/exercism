@@ -2,6 +2,7 @@
     "language": "en,pt-br",
     "ignoreRegExpList": [
         // cSpell: disable
+        "@Scientifica96\\b",
         "@arueckauer\\b",
         "@dkinzer\\b",
         "@duffn\\b",
