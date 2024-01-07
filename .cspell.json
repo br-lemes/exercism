@@ -11,12 +11,15 @@
         "@kytrinyx\\b",
         "@lafent\\b",
         "@massivelivefun\\b",
+        "@neenjaw\\b",
         "@petemcfarlane\\b"
         // cSpell: enable
     ],
     "words": [
+        "Collatz",
         "exercism",
         "freenode",
+        "Lothar",
         "phpunit",
         "usize",
         "youtube",
