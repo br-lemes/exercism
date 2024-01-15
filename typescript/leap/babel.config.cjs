@@ -1,4 +1,1 @@
-module.exports = {
-    presets: ['@exercism/babel-preset-typescript'],
-    plugins: [],
-}
+../../.common/babel.config.cjs
