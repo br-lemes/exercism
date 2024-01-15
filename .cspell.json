@@ -2,6 +2,12 @@
     "language": "en,pt-br",
     "ignoreRegExpList": [
         // cSpell: disable
+        "'         hmmmmmmm...'",
+        "'FCECDFCAAB'",
+        "'Okay if like my  spacebar  quite a bit\\?   '",
+        "'Tom\\-ay\\-to, tom\\-aaaah\\-to.'",
+        "'ZOMG THE %",
+        "'fffbbcbeab\\?'",
         "\\brepr\\(.*\\)",
         "^\\- @[A-Za-z0-9]+$"
         // cSpell: enable
@@ -20,7 +26,7 @@
         "Lothar",
         "luacheck",
         "lucians",
-        "OxyphenButazone",
+        "oxyphenbutazone",
         "phpunit",
         "Schierboom",
         "struct",
