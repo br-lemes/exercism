@@ -9,13 +9,15 @@
         "['\"]ZOMG THE %",
         "['\"]fffbbcbeab\\?['\"]",
         "\\brepr\\(.*\\)",
-        "^\\- @[A-Za-z0-9]+$"
+        "^\\- @[-A-Za-z0-9]+$"
         // cSpell: enable
     ],
     "words": [
         "anyerror",
         "ascii",
         "Celes",
+        "clojureverse",
+        "cognitect-labs",
         "collatz",
         "Ebenezer",
         "exercism",
@@ -24,6 +26,8 @@
         "Ierusalimschy",
         "leapyear",
         "learnpython",
+        "lein",
+        "leiningen",
         "Lothar",
         "luacheck",
         "lucians",
