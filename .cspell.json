@@ -27,6 +27,8 @@
         "luacheck",
         "lucians",
         "mips",
+        "nonletters",
+        "nonquestion",
         "oxyphenbutazone",
         "phpunit",
         "Schierboom",
