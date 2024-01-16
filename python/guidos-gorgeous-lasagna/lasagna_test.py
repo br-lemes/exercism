@@ -1,3 +1,4 @@
+# pylint: skip-file
 import unittest
 import pytest
 
@@ -42,7 +43,7 @@ class LasagnaTest(unittest.TestCase):
         for variant, (time, expected) in enumerate(zip(input_data, result_data), start=1):
             with self.subTest(f'variation #{variant}', time=time, expected=expected):
                 actual_result = bake_time_remaining(time)
-                failure_msg = (f'Called bake_time_remaining({time}). ' 
+                failure_msg = (f'Called bake_time_remaining({time}). '
                                f'The function returned {actual_result}, but the tests '
                                f'expected {expected} as the remaining bake time.')
 
