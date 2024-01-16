@@ -16,6 +16,7 @@
         "anyerror",
         "ascii",
         "babashka",
+        "batslib",
         "Celes",
         "clojureverse",
         "cognitect-labs",
@@ -30,6 +31,7 @@
         "exercism",
         "freenode",
         "gitter",
+        "gmail",
         "Ierusalimschy",
         "imag",
         "ints",
@@ -52,14 +54,17 @@
         "pytest-subtests",
         "Pythontutor",
         "Schierboom",
+        "stackoverflow",
         "struct",
         "structs",
         "taskno",
+        "tombol",
         "traceback",
         "unskip",
         "usize",
         "xtest",
         "youtube",
-        "Ziglings"
+        "Ziglings",
+        "zoltan"
     ]
 }
