@@ -2,6 +2,7 @@
     "language": "en,pt-br",
     "ignoreRegExpList": [
         // cSpell: disable
+        "[Aa]nnalyn'?s?",
         "['\"]         hmmmmmmm...['\"]",
         "['\"]FCECDFCAAB['\"]",
         "['\"]Okay if like my  spacebar  quite a bit\\?   ['\"]",
@@ -59,6 +60,7 @@
         "misformatted",
         "nonletters",
         "nonquestion",
+        "Ovidiu",
         "oxyphenbutazone",
         "phpunit",
         "pytest",
