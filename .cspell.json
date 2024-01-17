@@ -47,6 +47,7 @@
         "luacheck",
         "lucians",
         "maxsplit",
+        "memcheck",
         "mips",
         "misformatted",
         "nonletters",
