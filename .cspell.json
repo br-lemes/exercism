@@ -13,10 +13,12 @@
         // cSpell: enable
     ],
     "words": [
+        "AEIOULNRST",
         "anyerror",
         "ascii",
         "babashka",
         "batslib",
+        "BCMP",
         "Celes",
         "clojureverse",
         "cognitect-labs",
@@ -29,6 +31,7 @@
         "docstrings",
         "Ebenezer",
         "exercism",
+        "FHVWY",
         "freenode",
         "gitter",
         "gmail",
