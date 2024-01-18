@@ -1,0 +1,1 @@
+../../.common/HINTS.1.md
