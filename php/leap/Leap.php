@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 function isLeap(int $year): bool
 {
-    return match (true) {
-        $year % 4 !== 0 => false,
-        $year % 100 !== 0 => true,
-        $year % 400 !== 0 => false,
-        default => true
-    };
+    if ($year % 4 === 0) {
+        if ($year % 100 === 0) {
+            if ($year % 400 === 0) {
+                return true;
+            }
+            return false;
+        }
+        return true;
+    }
+    return false;
 }
