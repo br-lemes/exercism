@@ -1,25 +1,21 @@
 
 export const isValid = (isbn) => {
-    if (isbn.match(/[^-X0-9]/)) {
-        return false
-    }
-    isbn = isbn.replace(/-/g, '')
-    if (isbn.length !== 10) {
-        return false
-    }
-    let sum = 0
-    for (let i = 0; i < 10; i++) {
-        if (isbn[i] === 'X') {
-            if (i !== 9) {
-                return false
-            }
-            sum += 10
-            continue
+    let count = 0;
+    let sum = 0;
+    for (let i = 0; i < isbn.length; i++) {
+        if (isbn[i] >= '0' && isbn[i] <= '9') {
+            sum += parseInt(isbn[i]) * (10 - count);
+            count++;
+            continue;
         }
-        sum += parseInt(isbn[i]) * (10 - i)
+        if (isbn[i] === 'X' && count === 9) {
+            sum += 10;
+            count++;
+            continue;
+        }
+        if (isbn[i] !== '-') {
+            return false
+        }
     }
-    if (sum % 11 !== 0) {
-        return false
-    }
-    return true
+    return count === 10 && sum % 11 === 0
 };
