@@ -21,6 +21,7 @@
         "abcdefghijklm",
         "AEIOULNRST",
         "anyerror",
+        "armstrong",
         "ascii",
         "babashka",
         "batslib",
