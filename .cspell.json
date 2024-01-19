@@ -18,6 +18,7 @@
         // cSpell: enable
     ],
     "words": [
+        "abcdefghijklm",
         "AEIOULNRST",
         "anyerror",
         "ascii",
@@ -44,6 +45,7 @@
         "freenode",
         "gitter",
         "gmail",
+        "gramma",
         "gsub",
         "Ierusalimschy",
         "imag",
@@ -93,6 +95,7 @@
         "youtube",
         "yrgnuh",
         "Ziglings",
-        "zoltan"
+        "zoltan",
+        "γράμμα"
     ]
 }
