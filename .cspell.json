@@ -130,6 +130,7 @@
         "plang",
         "pling",
         "plong",
+        "Prng",
         "pytest",
         "pytest-subtests",
         "Pythontutor",
