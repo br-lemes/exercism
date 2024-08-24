@@ -1,7 +1,8 @@
+
 export function valid(digitString: string): boolean {
     let i = digitString.length;
     let sum = 0;
-    let count = 0
+    let count = 0;
     let double = false;
     while (i > 0) {
         i--;

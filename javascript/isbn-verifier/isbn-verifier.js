@@ -17,10 +17,10 @@ export const isValid = (isbn) => {
         }
         char = char.charCodeAt(0) - 48;
         if (char < 0 || char > 9) {
-            return false
+            return false;
         }
         sum += char * (10 - count);
         count++;
     }
-    return count === 10 && sum % 11 === 0
+    return count === 10 && sum % 11 === 0;
 };

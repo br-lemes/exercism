@@ -1,8 +1,7 @@
 import {
-    // eslint-disable-next-line import/named
     EXPECTED_MINUTES_IN_OVEN,
-    remainingMinutesInOven,
     preparationTimeInMinutes,
+    remainingMinutesInOven,
     totalTimeInMinutes,
 } from './lasagna';
 

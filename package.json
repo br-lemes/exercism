@@ -1,0 +1,12 @@
+{
+    "dependencies": {
+        "@exercism/wasm-lib": "^0.2.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@typescript-eslint/eslint-plugin": "^8.2.0",
+        "@typescript-eslint/parser": "^8.2.0",
+        "eslint": "^8",
+        "eslint-plugin-simple-import-sort": "^12.1.1"
+    }
+}

@@ -25,8 +25,8 @@ export function preparationTimeInMinutes(numberOfLayers) {
 }
 
 /**
- * Calculates the total working time. That is, the time to prepare all the layers
- * of lasagna, and the time already spent in the oven.
+ * Calculates the total working time. That is, the time to prepare all the
+ * layers of lasagna, and the time already spent in the oven.
  *
  * @param {number} numberOfLayers
  * @param {number} actualMinutesInOven

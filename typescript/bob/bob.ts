@@ -1,16 +1,17 @@
+
 export function hey(message: string): string {
-    message = message.trim()
+    message = message.trim();
     if (message === '') {
-        return 'Fine. Be that way!'
+        return 'Fine. Be that way!';
     }
     if (!message.match(/[a-z]/) && message.match(/[A-Z]/)) {
         if (message.endsWith('?')) {
-            return "Calm down, I know what I'm doing!"
+            return "Calm down, I know what I'm doing!";
         }
-        return 'Whoa, chill out!'
+        return 'Whoa, chill out!';
     }
     if (message.endsWith('?')) {
-        return 'Sure.'
+        return 'Sure.';
     }
-    return 'Whatever.'
+    return 'Whatever.';
 }

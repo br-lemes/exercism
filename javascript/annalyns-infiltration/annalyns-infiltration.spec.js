@@ -1,8 +1,8 @@
 import {
     canExecuteFastAttack,
-    canSpy,
-    canSignalPrisoner,
     canFreePrisoner,
+    canSignalPrisoner,
+    canSpy,
 } from './annalyns-infiltration';
 
 describe('can execute fast attack', () => {
@@ -106,7 +106,8 @@ describe('can signal prisoner', () => {
         const prisonerIsAwake = false;
         const expected = false;
 
-        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake)).toBe(expected);
+        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake))
+            .toBe(expected);
     });
 
     test('when only the prisoner is awake', () => {
@@ -114,7 +115,8 @@ describe('can signal prisoner', () => {
         const prisonerIsAwake = true;
         const expected = true;
 
-        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake)).toBe(expected);
+        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake))
+            .toBe(expected);
     });
 
     test('when only the archer is awake', () => {
@@ -122,7 +124,8 @@ describe('can signal prisoner', () => {
         const prisonerIsAwake = false;
         const expected = false;
 
-        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake)).toBe(expected);
+        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake))
+            .toBe(expected);
     });
 
     test('when everyone is awake', () => {
@@ -130,7 +133,8 @@ describe('can signal prisoner', () => {
         const prisonerIsAwake = true;
         const expected = false;
 
-        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake)).toBe(expected);
+        expect(canSignalPrisoner(archerIsAwake, prisonerIsAwake))
+            .toBe(expected);
     });
 });
 
