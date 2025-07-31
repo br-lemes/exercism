@@ -1,0 +1,52 @@
+# | Register | Usage     | Type    | Description                              |
+# | -------- | --------- | ------- | ---------------------------------------- |
+# | `$a0`    | input     | address | null-terminated input string             |
+# | `$v0`    | output    | boolean | valid isbn (`0` = `false`, `1` = `true`) |
+# | `$t0-9`  | temporary | any     | used for temporary storage               |
+
+.globl is_valid
+
+# $t0 = index | $t1 = count | $t2 = sum | $t3 = char
+
+is_valid:
+        move    $t0, $a0
+        li      $t1, 0
+        li      $t2, 0
+        li      $v0, 0
+
+loop:
+        lb      $t3, ($t0)
+        beqz    $t3, check
+        addi    $t0, $t0, 1
+        li      $t9, '-'
+        beq     $t3, $t9, loop
+        li      $t9, 'X'
+        beq     $t3, $t9, digit
+        sub     $t3, $t3, 48
+        li      $t9, 0
+        blt     $t3, $t9, break
+        li      $t9, 9
+        bgt     $t3, $t9, break
+        li      $t9, 10
+        sub     $t9, $t9, $t1
+        mul     $t9, $t3, $t9
+        add     $t2, $t2, $t9
+        addi    $t1, $t1, 1
+        j       loop
+
+digit:
+        li      $t9, 9
+        bne     $t1, $t9, break
+        addi    $t2, $t2, 10
+        addi    $t1, $t1, 1
+
+check:
+        li      $t9, 10
+        bne     $t1, $t9, break
+        li      $t9, 11
+        rem     $t8, $t2, $t9
+        bnez    $t8, break
+        li      $v0, 1
+
+break:
+        jr      $ra
