@@ -1,0 +1,16 @@
+{
+    "objectWrap": "collapse",
+    "overrides": [
+        {
+            "files": ["*.md"],
+            "options": {
+                "embeddedLanguageFormatting": "off",
+                "proseWrap": "always",
+                "tabWidth": 2
+            }
+        }
+    ],
+    "printWidth": 80,
+    "singleQuote": true,
+    "tabWidth": 4
+}

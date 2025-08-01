@@ -1,10 +1,12 @@
 {
     "env": { "browser": true, "jest": true },
     "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+    "ignorePatterns": ["**/*.spec.js", "javascript/**", "typescript/**"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
     "plugins": ["simple-import-sort", "@typescript-eslint"],
     "rules": {
+        "@typescript-eslint/consistent-type-imports": "warn",
         "accessor-pairs": "warn",
         "array-bracket-spacing": "warn",
         "array-callback-return": "warn",
@@ -26,15 +28,16 @@
         "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
         "generator-star-spacing": ["warn", "both"],
         "handle-callback-err": ["warn", "^(err|error)$"],
-        "indent": ["warn", 4, { "SwitchCase": 1 }],
         "jsx-quotes": ["warn", "prefer-single"],
         "key-spacing": "warn",
         "keyword-spacing": "warn",
         "linebreak-style": ["warn", "unix"],
-        "lines-between-class-members": ["warn", "always", {
-            "exceptAfterSingleLine": true
-        }],
-        "max-len": "warn",
+        "lines-between-class-members": [
+            "warn",
+            "always",
+            { "exceptAfterSingleLine": true }
+        ],
+        "max-len": ["warn", { "code": 100, "ignoreUrls": true }],
         "new-cap": ["warn", { "capIsNew": false }],
         "new-parens": "warn",
         "no-caller": "warn",
@@ -49,13 +52,16 @@
         "no-label-var": "warn",
         "no-labels": "warn",
         "no-lone-blocks": "warn",
-        "no-mixed-operators": ["warn", {
-            "groups": [
-                ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-                ["&&", "||"],
-                ["in", "instanceof"]
-            ]
-        }],
+        "no-mixed-operators": [
+            "warn",
+            {
+                "groups": [
+                    ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+                    ["&&", "||"],
+                    ["in", "instanceof"]
+                ]
+            }
+        ],
         "no-multi-spaces": "warn",
         "no-multi-str": "warn",
         "no-multiple-empty-lines": ["warn", { "max": 1 }],
@@ -78,16 +84,18 @@
         "no-unmodified-loop-condition": "warn",
         "no-unneeded-ternary": ["warn", { "defaultAssignment": false }],
         "no-unreachable-loop": "warn",
-        "no-unused-expressions": ["warn", {
-            "allowShortCircuit": true,
-            "allowTernary": true,
-            "allowTaggedTemplates": true
-        }],
-        "no-use-before-define": ["warn", {
-            "functions": false,
-            "classes": false,
-            "variables": false
-        }],
+        "no-unused-expressions": [
+            "warn",
+            {
+                "allowShortCircuit": true,
+                "allowTaggedTemplates": true,
+                "allowTernary": true
+            }
+        ],
+        "no-use-before-define": [
+            "warn",
+            { "classes": false, "functions": false, "variables": false }
+        ],
         "no-useless-call": "warn",
         "no-useless-computed-key": "warn",
         "no-useless-constructor": "warn",
@@ -95,45 +103,58 @@
         "no-var": "warn",
         "no-void": "warn",
         "no-whitespace-before-property": "warn",
-        "object-curly-newline": ["warn", {
-            "multiline": true,
-            "consistent": true
-        }],
+        "object-curly-newline": [
+            "warn",
+            { "consistent": true, "multiline": true }
+        ],
         "object-curly-spacing": ["warn", "always"],
-        "object-property-newline": ["warn", {
-            "allowAllPropertiesOnSameLine": true
-        }],
+        "object-property-newline": [
+            "warn",
+            { "allowAllPropertiesOnSameLine": true }
+        ],
         "object-shorthand": ["warn", "properties"],
         "one-var": ["warn", { "initialized": "never" }],
-        "operator-linebreak": ["warn", "after", {
-            "overrides": { "?": "before", ":": "before", "|>": "before" }
-        }],
+        "operator-linebreak": [
+            "warn",
+            "after",
+            { "overrides": { ":": "before", "?": "before", "|>": "before" } }
+        ],
         "padded-blocks": ["warn", "never"],
         "prefer-arrow-callback": "warn",
-        "prefer-regex-literals": ["warn", {
-            "disallowRedundantWrapping": true
-        }],
+        "prefer-regex-literals": [
+            "warn",
+            { "disallowRedundantWrapping": true }
+        ],
         "quote-props": ["warn", "as-needed"],
         "quotes": ["warn", "single", { "avoidEscape": true }],
         "rest-spread-spacing": "warn",
         "semi": ["warn", "always"],
         "semi-spacing": "warn",
-        "simple-import-sort/imports": ["warn", {
-            "groups": [["^\\u0000"], ["^node:"], ["^@?\\w"], ["^"], ["^\\."]]
-        }],
+        "simple-import-sort/imports": [
+            "warn",
+            {
+                "groups": [
+                    ["^\\u0000"],
+                    ["^node:"],
+                    ["^@?\\w"],
+                    ["^"],
+                    ["^\\."]
+                ]
+            }
+        ],
         "space-before-blocks": "warn",
-        "space-before-function-paren": ["warn", {
-            "anonymous": "always",
-            "named": "never",
-            "asyncArrow": "always"
-        }],
+        "space-before-function-paren": [
+            "warn",
+            { "anonymous": "always", "asyncArrow": "always", "named": "never" }
+        ],
         "space-in-parens": "warn",
         "space-infix-ops": "warn",
         "space-unary-ops": "warn",
-        "spaced-comment": ["warn", "always", {
-            "block": { "balanced": true },
-            "markers": ["/"]
-        }],
+        "spaced-comment": [
+            "warn",
+            "always",
+            { "block": { "balanced": true }, "markers": ["/"] }
+        ],
         "symbol-description": "warn",
         "template-curly-spacing": "warn",
         "template-tag-spacing": "warn",

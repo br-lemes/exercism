@@ -1,0 +1,4 @@
+{
+    "compilerOptions": { "checkJs": true, "strict": true, "target": "ESNext" },
+    "exclude": ["**/*.spec.js", "**/*.test.ts", "javascript/**"]
+}
