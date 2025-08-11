@@ -1,1 +1,0 @@
-../../.common/HELP.1.md
