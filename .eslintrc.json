@@ -1,7 +1,21 @@
 {
     "env": { "browser": true, "jest": true },
     "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-    "ignorePatterns": ["**/*.spec.js", "javascript/**", "typescript/**"],
+    "ignorePatterns": [
+        "**/*.spec.js",
+        "**/*.test.ts",
+        "solutions/javascript/annalyns-infiltration/1/*",
+        "solutions/javascript/isbn-verifier/[12345]/*",
+        "solutions/javascript/list-ops/1/*",
+        "solutions/typescript/bob/1/*",
+        "solutions/typescript/collatz-conjecture/1/*",
+        "solutions/typescript/difference-of-squares/[13]/*",
+        "solutions/typescript/hello-world/1/*",
+        "solutions/typescript/leap/1/*",
+        "solutions/typescript/luhn/1/*",
+        "solutions/typescript/resistor-color/1/*",
+        "solutions/typescript/scrabble-score/1/*"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
     "plugins": ["simple-import-sort", "@typescript-eslint"],
