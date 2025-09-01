@@ -4,6 +4,7 @@
     "ignorePatterns": [
         "**/*.spec.js",
         "**/*.test.ts",
+        "*/**/*.config.js",
         "solutions/javascript/annalyns-infiltration/1/*",
         "solutions/javascript/isbn-verifier/[12345]/*",
         "solutions/javascript/list-ops/1/*",

@@ -1,4 +1,13 @@
 {
+    "ignorePaths": [
+        "**/*.spec.js",
+        "**/*.test.ts",
+        "*/**/*.config.cjs",
+        "*/**/*.config.js",
+        "*/**/*.md",
+        "*/**/package.json",
+        "*/**/tsconfig.json"
+    ],
     "import": ["@cspell/dict-pt-br/cspell-ext.json"],
     "language": "en,pt-br",
     "words": [
@@ -13,6 +22,7 @@
         "anyerror",
         "anytype",
         "arabicNumeral",
+        "armstrong-numbers",
         "ascii",
         "asciiz",
         "babashka",
