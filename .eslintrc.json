@@ -10,9 +10,11 @@
         "solutions/typescript/bob/1/*",
         "solutions/typescript/collatz-conjecture/1/*",
         "solutions/typescript/difference-of-squares/[13]/*",
+        "solutions/typescript/dnd-character/1/*",
         "solutions/typescript/hello-world/1/*",
         "solutions/typescript/leap/1/*",
         "solutions/typescript/luhn/1/*",
+        "solutions/typescript/rational-numbers/1/*",
         "solutions/typescript/resistor-color/1/*",
         "solutions/typescript/scrabble-score/1/*"
     ],
