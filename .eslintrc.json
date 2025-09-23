@@ -43,7 +43,7 @@
         "eqeqeq": "warn",
         "func-call-spacing": "warn",
         "func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
-        "generator-star-spacing": ["warn", "both"],
+        "generator-star-spacing": ["warn", "after"],
         "handle-callback-err": ["warn", "^(err|error)$"],
         "jsx-quotes": ["warn", "prefer-single"],
         "key-spacing": "warn",
