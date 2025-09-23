@@ -1,4 +1,27 @@
 {
-    "compilerOptions": { "checkJs": true, "strict": true, "target": "ESNext" },
-    "exclude": ["**/*.spec.js", "**/*.test.ts", "javascript/**"]
+    "compilerOptions": {
+        "checkJs": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ESNext"
+    },
+    "exclude": [
+        "**/*.config.*js",
+        "**/*.spec.js",
+        "**/*.test.ts",
+        "**/test-runner.mjs",
+        "solutions/javascript/all-your-base/1/*",
+        "solutions/javascript/isbn-verifier/1/*",
+        "solutions/javascript/isbn-verifier/2/*",
+        "solutions/javascript/isbn-verifier/3/*",
+        "solutions/javascript/isbn-verifier/4/*",
+        "solutions/javascript/isbn-verifier/5/*",
+        "solutions/javascript/linked-list/1/*",
+        "solutions/javascript/pangram/1/*",
+        "solutions/javascript/reverse-string/1/*",
+        "solutions/javascript/rna-transcription/1/*",
+        "solutions/javascript/robot-simulator/1/*",
+        "solutions/javascript/space-age/1/*"
+    ]
 }
