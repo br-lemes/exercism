@@ -64,7 +64,8 @@
             "!solutions/typescript/scrabble-score/2/*",
             "!solutions/typescript/simple-cipher/1/*",
             "!solutions/typescript/space-age/1/*",
-            "!solutions/typescript/wordy/1/*"
+            "!solutions/typescript/wordy/1/*",
+            "!vendor"
         ]
     },
     "formatter": { "indentStyle": "space", "indentWidth": 4 },

@@ -85,6 +85,7 @@
         "orelse",
         "paren",
         "parens",
+        "phpunit",
         "pig_latin_word",
         "plang",
         "pling",
