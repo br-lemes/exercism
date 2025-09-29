@@ -17,7 +17,8 @@
         "solutions/typescript/luhn/1/*",
         "solutions/typescript/rational-numbers/1/*",
         "solutions/typescript/resistor-color/1/*",
-        "solutions/typescript/scrabble-score/1/*"
+        "solutions/typescript/scrabble-score/1/*",
+        "vendor"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": { "ecmaVersion": "latest", "sourceType": "module" },
