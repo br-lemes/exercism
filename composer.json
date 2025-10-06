@@ -3,6 +3,6 @@
         "phpunit/phpunit": "^12.3"
     },
     "scripts": {
-        "test": "phpunit --colors php/*/*Test.php"
+        "test": "phpunit --colors --display-warnings php/*/*Test.php"
     }
 }
