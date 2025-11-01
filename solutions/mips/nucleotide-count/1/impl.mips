@@ -1,0 +1,66 @@
+# | Register | Usage        | Type    | Description                             |
+# | -------- | ------------ | ------- | --------------------------------------- |
+# | `$a0`    | input        | address | null-terminated input string            |
+# | `$a1`    | input/output | address | word array with final nucleotide-counts |
+# | `$t0-9`  | temporary    | any     | for temporary storage                   |
+
+.globl nucleotide_counts
+
+nucleotide_counts:
+loop:
+        lb    $t0, 0($a0)
+        beq   $t0, $zero, end
+
+        li    $t1, 'a'
+        blt   $t0, $t1, check
+        li    $t2, 'z'
+        bgt   $t0, $t2, check
+        addi  $t0, $t0, -32
+
+check:
+        li    $t1, 'A'
+        beq   $t0, $t1, inc_a
+        li    $t1, 'C'
+        beq   $t0, $t1, inc_c
+        li    $t1, 'G'
+        beq   $t0, $t1, inc_g
+        li    $t1, 'T'
+        beq   $t0, $t1, inc_t
+
+        li    $t0, -1
+        sw    $t0, 0($a1)
+        sw    $t0, 4($a1)
+        sw    $t0, 8($a1)
+        sw    $t0, 12($a1)
+        j     end
+
+next:
+        addi  $a0, $a0, 1
+        j     loop
+
+inc_a:
+        lw    $t3, 0($a1)
+        addi  $t3, $t3, 1
+        sw    $t3, 0($a1)
+        j     next
+
+inc_c:
+        lw    $t3, 4($a1)
+        addi  $t3, $t3, 1
+        sw    $t3, 4($a1)
+        j     next
+
+inc_g:
+        lw    $t3, 8($a1)
+        addi  $t3, $t3, 1
+        sw    $t3, 8($a1)
+        j     next
+
+inc_t:
+        lw    $t3, 12($a1)
+        addi  $t3, $t3, 1
+        sw    $t3, 12($a1)
+        j     next
+
+end:
+        jr $ra
