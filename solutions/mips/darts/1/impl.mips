@@ -1,0 +1,37 @@
+# | Register | Usage     | Type    | Description                |
+# | -------- | --------- | ------- | -------------------------- |
+# | `$a0`    | input     | integer | x                          |
+# | `$a1`    | input     | integer | y                          |
+# | `$v0`    | output    | integer | points earned              |
+# | `$t0-9`  | temporary | any     | used for temporary storage |
+
+.globl score
+
+score:
+    mul   $t0, $a0, $a0
+    mul   $t1, $a1, $a1
+    add   $t2, $t0, $t1
+
+    li    $t3, 100
+    bgt   $t2, $t3, distance_gt_10
+
+    li    $t3, 25
+    bgt   $t2, $t3, distance_gt_5
+
+    li    $t3, 1
+    bgt   $t2, $t3, distance_gt_1
+
+    li    $v0, 10
+    jr    $ra
+
+distance_gt_1:
+    li    $v0, 5
+    jr    $ra
+
+distance_gt_5:
+    li    $v0, 1
+    jr    $ra
+
+distance_gt_10:
+    li    $v0, 0
+    jr    $ra
