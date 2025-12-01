@@ -50,6 +50,7 @@
         "defun",
         "deinit",
         "divmod",
+        "EliudsEggs",
         "errdefer",
         "exercism",
         "exprational",
